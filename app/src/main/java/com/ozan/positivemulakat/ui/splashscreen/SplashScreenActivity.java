@@ -40,7 +40,7 @@ public class SplashScreenActivity extends BaseActivity {
                 finish();
 
             }
-        }, 1000);
+        }, 1000); // 1 sn gecikmeyi sagliyor
 
     }
 

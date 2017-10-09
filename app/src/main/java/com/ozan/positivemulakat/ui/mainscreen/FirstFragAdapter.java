@@ -30,7 +30,7 @@ import java.util.List;
 
 /**
  * Created by ozanurkan on 6.10.2017.
- * kanka sesli iletişimi açalım ı müsait msiin?
+ *
  */
 
 public class FirstFragAdapter extends RecyclerView.Adapter<FirstFragAdapter.MyViewHolder> {

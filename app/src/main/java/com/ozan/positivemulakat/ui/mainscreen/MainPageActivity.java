@@ -81,34 +81,4 @@ public class MainPageActivity extends BaseActivity {
         return MainPageActivity.this;
     }
 
-    /*public void getServiceDatasFirst() {
-
-        TournamentID_1_Api api = ApiClient.getClient().create(TournamentID_1_Api.class);
-        Call<Datas> call = api.getData();
-
-        call.enqueue(new Callback<Datas>() {
-            @Override
-            public void onResponse(Call<Datas> call, Response<Datas> response) {
-
-                try {
-
-                    //Log.i("data", String.valueOf(response.body().getLeagueStage().get(0).getLeagueTable()));
-                    tablesListFirst = (ArrayList<LeagueStage>) response.body().getLeagueStage();
-
-                    //getPager(tablesList);
-
-                } catch (NullPointerException ex) {
-                    ex.printStackTrace();
-                }
-
-
-            }
-
-            @Override
-            public void onFailure(Call<Datas> call, Throwable t) {
-
-                t.printStackTrace();
-            }
-        });
-    }*/
 }
