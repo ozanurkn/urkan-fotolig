@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/first_frag_adapter_height">
+
+    <RelativeLayout
+        android:id="@+id/rl_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/first_frag_rank_size" />
+
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rank"
+            android:text="  -  "
+            android:textSize="@dimen/first_frag_rank_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/teamlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dash"
+
+            android:src="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/teamlogo"
+            android:text="Medipol Basaksehir"
+            android:textSize="@dimen/first_frag_name_size"
+            app:layout_marginLeftPercent="1%" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/oynama"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/name"
+                android:gravity="center_vertical"
+                android:text="16"
+                android:textSize="@dimen/first_frag_oynama_size" />
+
+            <TextView
+                android:id="@+id/puan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/first_frag_puan_size" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:layout_below="@+id/rl_adapter"/>
+</RelativeLayout>

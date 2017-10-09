@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_frag_rank_size">16dp</dimen>
+    <dimen name="first_frag_name_size">16dp</dimen>
+    <dimen name="first_frag_oynama_size">16dp</dimen>
+    <dimen name="first_frag_puan_size">16dp</dimen>
+    <dimen name="first_frag_adapter_height">60dp</dimen>
+    <dimen name="fragment_detail_logo_size">35dp</dimen>
+</resources>
